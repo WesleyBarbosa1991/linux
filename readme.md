@@ -5,23 +5,15 @@
 1- Baixe a Versão de acordo com seu Sistema Operacional
 __(SIM OS SCRIPTS SÃO DIFERENTES)__
 
-2- Abra o Script com qualquer editor de Texto
+2- Clique com botão direito, __propriedades>>permissões>>__ e marque a opção para  __"permitir execução como um programa"__
 
-3- Busque pelas linhas __"112 & 124 "__
+3-Feche
 
-4- Altere o escrito USUARIO para seu usuário no linux(igual aparece em sua tela de login)
+4- Clique com botão direito do mouse dentro da pasta que você salvou o arquivo do script, e selecione __"Abrir no Terminall"__
 
-5- Salve e Feche __(IMPORTANTE SALVAR COM O NOME IGUAL ESTÁ NO SCRIPT!)__
+5- no terminal execute o comando __"ls"__ para listar os arquivos na pasta
 
-6- Clique com botão direito, __propriedades>>permissões>>__ e marque a opção para  __"permitir execução como um programa"__
-
-7-Feche
-
-8- Clique com botão direito do mouse dentro da pasta que você salvou o arquivo do script, e selecione __"Abrir no Terminall"__
-
-9- no terminal execute o comando __"ls"__ para listar os arquivos na pasta
-
-10- em seguida execute o arquivo corresppondente.
+6- em seguida execute o arquivo corresppondente.
 
 # Tipos de Instalação
 
