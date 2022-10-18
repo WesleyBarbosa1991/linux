@@ -109,7 +109,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 ## Download de programas Externos##
 ## Substituir o nome Usuário pelo usuário logado no pc##
 echo "Criando pasta para baixar os arquivos"
-mkdir /home/USUARIO/Downloads/Programas && cd /home/USUARIO/Downloads/Programas
+mkdir /home/$USER/Downloads/Programas && cd /home/$USER/Downloads/Programas
 
 ## Download Navegador Google Chrome e Teamviewer##
 echo "iniciando download e instalando Google Chrome"
@@ -121,7 +121,7 @@ wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo
 cd 
 echo "Removendo pastas e arquivos baixados"
 ## Substituir o nome Usuário pelo usuário logado no pc##
-sudo rm -r /home/USUARIO/Downloads/Programas
+sudo rm -r /home/$USER/Downloads/Programas
 
 echo "instalando plugins adicionais do Teaamviewer e demais Programas !"
 
