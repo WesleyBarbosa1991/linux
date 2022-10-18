@@ -1,5 +1,6 @@
 #!/bin/bash
-## O COMANDO ACIMA É PARA QUE O SISTEMA OPERACIONAL EXECUTE O SCRIPT INTEIRO
+
+## O COMANDO ACIMA É PARA QUE O SISTEMA OPERACIONAL EXECUTE O SCRIPT INTEIRO##
 # ----------------------------- Script ----------------------------- #
 
 ##COMENTÁTIOS DEVEM FICAR ENTRE HASTAGS##
@@ -133,7 +134,7 @@ sudo add-apt-repository ppa:obsproject/obs-studio
 
 ## ----------------------------- EXECUÇÃO ----------------------------- ##
 
-## Atualizando o repositório depois da adição de novos repositórios ##
+## Atualizando o sistema depois da adição de novos repositórios ##
 echo "Atualizando Sistema Operacional & Repositórios"
 sudo apt-get update -y
 
@@ -154,6 +155,10 @@ sudo apt-get install virt-manager;
 ##Fim do espaço para outros programas##
 #----------Ubuntu já vem com Snaps instalados caso seu Linux Não seja o Ubuntu, descomente as duas linhas abaixo----------
 
+
+##Pré Instalação Snap##
+sudo rm -r /etc/apt/preferences.d/nosnap.pref
+
 echo "Instalando Suporte a Snaps"
 sudo apt-get install snapd
 
@@ -162,8 +167,8 @@ sudo apt-get install snapd
 echo "Atualizando Snaps"
 sudo snap refresh 
 
-echo "instalando WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
+echo "instalando Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
+sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
 ##Espaço destinado a novos apps coloque os comandos snap de instalação padrão sudo snap install... nas próximas linhas##
 
 
