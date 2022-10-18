@@ -1,5 +1,6 @@
 #!/bin/bash
-## O COMANDO ACIMA É PARA QUE O SISTEMA OPERACIONAL EXECUTE O SCRIPT INTEIRO
+
+## O COMANDO ACIMA É PARA QUE O SISTEMA OPERACIONAL EXECUTE O SCRIPT INTEIRO##
 # ----------------------------- Script ----------------------------- #
 
 ##COMENTÁTIOS DEVEM FICAR ENTRE HASTAGS##
@@ -114,19 +115,20 @@ mkdir /home/USUARIO/Downloads/Programas && cd /home/USUARIO/Downloads/Programas
 ## Download Navegador Google Chrome e Teamviewer##
 echo "iniciando download e instalando Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb;
+
 echo "iniciando download e instalando Teamviewer"
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo dpkg -i teamviewer_amd64.deb;
 
 cd 
 echo "Removendo pastas e arquivos baixados"
-## Substituir o nome Usuário pelo usuário logaado no pc##
+## Substituir o nome Usuário pelo usuário logado no pc##
 sudo rm -r /home/USUARIO/Downloads/Programas
 
 echo "instalando plugins adicionais do Teaamviewer e demais Programas !"
 
 sudo apt-get upgrade -y; sudo apt --fix-broken install
 
-## Adicionando repositórios de terceiros e Drivers Nvidia##
+## Adicionando repositórios Drivers Nvidia e OBS Studio##
 echo "Adicionando repositórios Drivers Nvidia e OBS Studio"
 sudo apt-add-repository ppa:graphics-drivers/ppa 
 sudo add-apt-repository ppa:obsproject/obs-studio
@@ -158,8 +160,8 @@ sudo apt-get install virt-manager;
 echo "Atualizando Snap"
 sudo snap refresh 
 
-echo "instalando WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
+echo "Opera, instalando WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
+sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
 ##Espaço destinado a novos apps coloque os comandos snap de instalação padrão sudo snap install... nas próximas linhas##
 
 
