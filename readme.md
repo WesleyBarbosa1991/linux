@@ -1,49 +1,71 @@
-# Instaladores Automatizados linux
+# Instaladores Automatizados Linux
 
 # Passo a Passo para Instalação !!!
 
-1 Baixe a Versão de acordo com seu Sistema Operacional
-(SIM OS SCRIPTS SÃO DIFERENTES)
+1- Baixe a Versão de acordo com seu Sistema Operacional
+__(SIM OS SCRIPTS SÃO DIFERENTES)__
 
-2 Abra o Script com qualquer editor de Texto
+2- Abra o Script com qualquer editor de Texto
 
-Busque pelas linhas "112 & 124 "
+3- Busque pelas linhas __"112 & 124 "__
 
-altere o escrito USUARIO para seu usuário no linux(igual aparece em sua tela de login)
+4- Altere o escrito USUARIO para seu usuário no linux(igual aparece em sua tela de login)
 
-Salve e Feche(IMPORTANTE SALVAR COM O NOME IGUAL ESTÁ NO SCRIPT !
+5- Salve e Feche __(IMPORTANTE SALVAR COM O NOME IGUAL ESTÁ NO SCRIPT!)__
 
-Clique com botão direito, propriedades>>permissões>>e marque a opção para  "permitir execução como um programa"
+6- Clique com botão direito, __propriedades>>permissões>>__ e marque a opção para  __"permitir execução como um programa"__
 
-Feche
+7-Feche
 
-clique com botão direito do mouse dentro da pasta que você salvou o arquivo do script, e selecione "Abrir no Terminall"
+8- Clique com botão direito do mouse dentro da pasta que você salvou o arquivo do script, e selecione __"Abrir no Terminall"__
 
-no terminal execute o comando "ls" para listar os arquivos na pasta
+9- no terminal execute o comando __"ls"__ para listar os arquivos na pasta
 
-em seguida execute o arquivo.
+10- em seguida execute o arquivo corresppondente.
 
-# Abrindo arquivo Correto
+# Tipos de Instalação
 
-# INSTALAÇÃO UBUNTU
-Para instalação Completa no Ubuntu execute
+__Instalação Completa__
+
+__Navegadores:__
+
+Google Chrome e Opera
+
+__Programas:__
+
+WPS Office Completo em Português, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager
+
+
+__Instalação Básica__
+
+__Navegadores:__
+
+Google Chrome e Opera
+
+__Programas:__
+
+WPS Office Completo em Português, Whatsdesk, Telegram Desktop, Drivers Nvidia, Teamviewer
+
+# Instalação Ubuntu
+__Para instalação Completa no Ubuntu execute__
 
 ./ubuntu_complete.sh
 
-Para instalação Básica no Ubuntu execute
+__Para instalação Básica no Ubuntu execute__
 
 ./ubuntu_basic.sh
 
 # INSTALAÇÃO DEMAIS DERIVADOS DO DEBIAN
-Para instalação Completa no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute
+
+__Para instalação Completa no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute__
 
 ./mint_zorin_debian_complete.sh
 
-Para instalação BÁSICA  no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute
+__Para instalação Básica no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute__
 
 ./mint_zorin_debian_basic.sh
 
-irá pedir sua senha de sudo su ( é um script que instala diversos apps, portanto precisa de permissão !)
+__irá pedir sua senha para executar o sudo su ( é um script que instala diversos apps, portanto precisa de permissão !)__
 
 
 
