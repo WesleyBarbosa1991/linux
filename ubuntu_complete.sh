@@ -42,7 +42,7 @@ echo "..."
 echo "..."
 echo "..."
 echo "..."
-echo "Programas: WPS Office, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager"
+echo "Programas: WPS Office, Visual Studio Code, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager"
 echo "..."
 echo "..."
 echo "..."
@@ -160,8 +160,8 @@ sudo apt-get install virt-manager;
 echo "Atualizando Snap"
 sudo snap refresh 
 
-echo "Opera, instalando WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
+echo "instalando Visual Studio Code, Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
+sudo snap install code --classic; sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
 ##Espaço destinado a novos apps coloque os comandos snap de instalação padrão sudo snap install... nas próximas linhas##
 
 
@@ -180,7 +180,7 @@ sudo snap refresh
 ## Finalização, atualização e limpeza##
 echo "Finalização, atualização total e limpeza"
 sudo apt update && sudo apt dist-upgrade -y && sudo apt-get upgrade; sudo snap refresh; flatpak update; sudo apt autoclean;
-echo "Programas Inatalados com Sucesso!"
+echo "Programas Instalados com Sucesso!"
 echo "Sctipt feito por Wesley Barbosa"
 echo "DENTRO DE 1 MINUTO O COMPUTADOR IRÁ REINICIAR E ESTARÁ PRONTO PARA USO !"
 
