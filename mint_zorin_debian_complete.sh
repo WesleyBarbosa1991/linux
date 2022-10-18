@@ -4,7 +4,8 @@
 # ----------------------------- Script ----------------------------- #
 
 ##COMENTÁTIOS DEVEM FICAR ENTRE HASTAGS##
-echo "Este Script foi desenvolvido por Wesley Barbosa -  inspirados nos conteúdos do canal DIOLINUX"
+echo "Este Script foi desenvolvido por Wesley Barbosa -  Baseado nos conteúdos do canal DIOLINUX"
+echo "AMD Ryzen 5 5500,64GB RAM, NVME 500GB,RTX 2060" 
 echo "..."
 echo "..."
 echo "..."
@@ -42,7 +43,7 @@ echo "..."
 echo "..."
 echo "..."
 echo "..."
-echo "Programas: Visual Studio Code, WPS Office, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager"
+echo "Programas: WPS Office, Skype, Visual Studio Code, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virtual BOX"
 echo "..."
 echo "..."
 echo "..."
@@ -109,51 +110,52 @@ sudo apt-get update && sudo apt-get upgrade -y
 ## Download de programas Externos##
 ## Substituir o nome Usuário pelo usuário logaado no pc##
 echo "Criando pasta para baixar os arquivos"
-mkdir /home/USUARIO/Downloads/Programas && cd /home/USUARIO/Downloads/Programas
+mkdir /home/$USER/Downloads/Programas && cd /home/$USER/Downloads/Programas
 
 
-## Download Navegador Google Chrome e Teamviewer##
+## Download Navegador Google Chrome, Skype, Virtual BOX e Teamviewer##
 echo "iniciando download e instalando Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb;
+
 echo "iniciando download e instalando Teamviewer"
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo dpkg -i teamviewer_amd64.deb;
 
+echo "Iniciando Download e Instalando Skype"
+wget https://repo.skype.com/latest/skypeforlinux-64.deb && sudo dpkg -i skypeforlinux-64.deb;
+
 cd 
+
+mkdir /home/$USER/Downloads/Programas/outros && cd /home/$USER/Downloads/Programas/outros
+
+echo "Baixando VirtualBOX"
+wget https://download.virtualbox.org/virtualbox/7.0.0/virtualbox-7.0_7.0.0-153978~Ubuntu~jammy_amd64.deb
+
+sudo dpkg -i *.deb 
+
+cd
+
 echo "Removendo pastas e arquivos baixados"
-## Substituir o nome Usuário pelo usuário logaado no pc##
-sudo rm -r /home/USUARIO/Downloads/Programas
+sudo rm -r /home/$USER/Downloads/Programas
 
-echo "instalando plugins adicionais do Teaamviewer e demais Programas !"
-
+echo "instalando plugins adicionais do Teamviewer e demais Programas !"
 sudo apt-get upgrade -y; sudo apt --fix-broken install
 
-## Adicionando repositórios de terceiros e Drivers Nvidia##
+## Adicionando repositórios Drivers Nvidia e OBS Studio##
 echo "Adicionando repositórios Drivers Nvidia e OBS Studio"
 sudo apt-add-repository ppa:graphics-drivers/ppa 
 sudo add-apt-repository ppa:obsproject/obs-studio
 
 ## ----------------------------- EXECUÇÃO ----------------------------- ##
 
-## Atualizando o sistema depois da adição de novos repositórios ##
+## Atualizando o repositório depois da adição de novos repositórios ##
 echo "Atualizando Sistema Operacional & Repositórios"
 sudo apt-get update -y
 
 echo "instalando OBS Studio"
 sudo apt-get install obs-studio;
-echo "instalando Virt Manager"
-sudo apt-get install virt-manager;
 
-##Espaço destinado a novos apps coloque os comandos de instalação padrão sudo apt-get install... nas próximas linhas##
-
-
-
-
-
-
-
-
-##Fim do espaço para outros programas##
-#----------Ubuntu já vem com Snaps instalados caso seu Linux Não seja o Ubuntu, descomente as duas linhas abaixo----------
+##Correção Teamviewer##
+sudo apt-get upgrade -y; sudo apt --fix-broken install
 
 
 ##Pré Instalação Snap##
@@ -162,24 +164,12 @@ sudo rm -r /etc/apt/preferences.d/nosnap.pref
 echo "Instalando Suporte a Snaps"
 sudo apt-get install snapd
 
-
 ## Atualizar snaps ##
-echo "Atualizando Snaps"
+echo "Atualizando Snap"
 sudo snap refresh 
 
 echo "instalando Visual Studio Code, Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install code --classic, sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
-##Espaço destinado a novos apps coloque os comandos snap de instalação padrão sudo snap install... nas próximas linhas##
-
-
-
-
-
-
-
-
-##Fim do espaço para outros programas##
-
+sudo snap install code --classic; sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord;
 
 echo "Atualizando Apps Snaps Instalados"
 sudo snap refresh
