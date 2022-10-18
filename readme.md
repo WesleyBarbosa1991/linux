@@ -1,7 +1,9 @@
 # Instaladores Automatizados linux
+
 # Passo a Passo para Instalação !!!
 
-# 1 Baixe a Versão de acordo com seu Sistema Operacional(SIM OS SCRIPTS SÃO DIFERENTES)
+# 1 Baixe a Versão de acordo com seu Sistema Operacional
+(SIM OS SCRIPTS SÃO DIFERENTES)
 
 # 2 Abra o Script com qualquer editor de Texto
 
