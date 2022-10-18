@@ -21,7 +21,7 @@ clique com botão direito do mouse dentro da pasta que você salvou o arquivo do
 
 no terminal execute o comando "ls" para listar os arquivos na pasta
 
-em seguida execute ./nome_do_arquivo.sh
+em seguida execute o arquivo.
 
 # Abrindo arquivo Correto
 
