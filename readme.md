@@ -23,8 +23,21 @@ no terminal execute o comando "ls" para listar os arquivos na pasta
 
 em seguida execute ./nome_do_arquivo.sh
 
-# Exemplo 
+# Abrindo arquivo Correto
+
+# INSTALAÇÃO UBUNTU
+Para instalação Completa no Ubuntu execute
 ./ubuntu_complete.sh
+
+Para instalação Básica no Ubuntu execute
+./ubuntu_basic.sh
+
+# INSTALAÇÃO DEMAIS DERIVADOS DO DEBIAN
+Para instalação Completa no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute
+./mint_zorin_debian_complete.sh
+
+Para instalação BÁSICA  no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute
+./mint_zorin_debian_basic.sh
 
 irá pedir sua senha de sudo su ( é um script que instala diversos apps, portanto precisa de permissão !)
 
