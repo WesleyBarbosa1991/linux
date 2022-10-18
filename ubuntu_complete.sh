@@ -1,9 +1,9 @@
 #!/bin/bash
-
+## O COMANDO ACIMA É PARA QUE O SISTEMA OPERACIONAL EXECUTE O SCRIPT INTEIRO
 # ----------------------------- Script ----------------------------- #
 
 ##COMENTÁTIOS DEVEM FICAR ENTRE HASTAGS##
-echo "Este Script foi desenvolvido por Wesley Barbosa"
+echo "Este Script foi desenvolvido por Wesley Barbosa -  inspirados nos conteúdos do canal DIOLINUX"
 echo "..."
 echo "..."
 echo "..."
@@ -41,7 +41,7 @@ echo "..."
 echo "..."
 echo "..."
 echo "..."
-echo "Programas: Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager"
+echo "Programas: WPS Office, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager"
 echo "..."
 echo "..."
 echo "..."
@@ -108,7 +108,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 ## Download de programas Externos##
 ## Substituir o nome Usuário pelo usuário logaado no pc##
 echo "Criando pasta para baixar os arquivos"
-mkdir /home/wesley/Downloads/Programas && cd /home/wesley/Downloads/Programas
+mkdir /home/USUARIO/Downloads/Programas && cd /home/USUARIO/Downloads/Programas
 
 
 ## Download Navegador Google Chrome e Teamviewer##
@@ -119,8 +119,8 @@ wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo
 
 cd 
 echo "Removendo pastas e arquivos baixados"
-
-sudo rm -r /home/wesley/Downloads/Programas
+## Substituir o nome Usuário pelo usuário logaado no pc##
+sudo rm -r /home/USUARIO/Downloads/Programas
 
 echo "instalando plugins adicionais do Teaamviewer e demais Programas !"
 
@@ -152,18 +152,14 @@ sudo apt-get install virt-manager;
 
 
 ##Fim do espaço para outros programas##
-#----------Ubuntu já vem com Snaps instalados caso seu Linux Não seja o Ubuntu, descomente as duas linhas abaixo----------
-
-## echo "Instalando Suporte a Snap"##
-## sudo apt-get install snapd ##
 
 
 ## Atualizar snaps ##
 echo "Atualizando Snap"
 sudo snap refresh 
 
-echo "instalando  Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
+echo "instalando WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
+sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
 ##Espaço destinado a novos apps coloque os comandos snap de instalação padrão sudo snap install... nas próximas linhas##
 
 
