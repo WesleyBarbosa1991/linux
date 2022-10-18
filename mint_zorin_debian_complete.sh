@@ -4,7 +4,10 @@
 # ----------------------------- Script ----------------------------- #
 
 ##COMENTÁTIOS DEVEM FICAR ENTRE HASTAGS##
+
+
 echo "Este Script foi desenvolvido por Wesley Barbosa -  Baseado nos conteúdos do canal DIOLINUX"
+echo "Script Feito para Linux Mint, Debian, Zorin, ou qualquer outra distro Baseada no Debian __Exceto Ubuntu__"
 echo "AMD Ryzen 5 5500,64GB RAM, NVME 500GB,RTX 2060" 
 echo "..."
 echo "..."
@@ -127,7 +130,7 @@ cd
 
 mkdir /home/$USER/Downloads/Programas/outros && cd /home/$USER/Downloads/Programas/outros
 
-echo "Baixando VirtualBOX"
+echo "Baixando e  VirtualBOX"
 wget https://download.virtualbox.org/virtualbox/7.0.0/virtualbox-7.0_7.0.0-153978~Ubuntu~jammy_amd64.deb
 
 sudo dpkg -i *.deb 
