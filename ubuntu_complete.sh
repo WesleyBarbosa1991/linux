@@ -127,11 +127,13 @@ sudo rm -r /home/USUARIO/Downloads/Programas
 echo "instalando plugins adicionais do Teaamviewer e demais Programas !"
 
 sudo apt-get upgrade -y; sudo apt --fix-broken install
+sudo apt install ppa-purge
 
 ## Adicionando repositórios Drivers Nvidia e OBS Studio##
-echo "Adicionando repositórios Drivers Nvidia e OBS Studio"
+echo "Adicionando repositórios Drivers Nvidia e OBS Studio e GIMP"
 sudo apt-add-repository ppa:graphics-drivers/ppa 
 sudo add-apt-repository ppa:obsproject/obs-studio
+udo ppa-purge ppa:otto-kesselgulasch/gimp
 
 ## ----------------------------- EXECUÇÃO ----------------------------- ##
 
@@ -143,6 +145,10 @@ echo "instalando OBS Studio"
 sudo apt-get install obs-studio;
 echo "instalando Virt Manager"
 sudo apt-get install virt-manager;
+echo "Instalando Plugins do Gimp"
+sudo apt install gimp-plugin-registry gimp-gmic
+
+
 
 ##Espaço destinado a novos apps coloque os comandos de instalação padrão sudo apt-get install... nas próximas linhas##
 
@@ -160,8 +166,8 @@ sudo apt-get install virt-manager;
 echo "Atualizando Snap"
 sudo snap refresh 
 
-echo "instalando Visual Studio Code, Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install code --classic; sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord
+echo "instalando PhotoGimp, Visual Studio Code, Simplenote, Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
+sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install code --classic; sudo snap install simplenote; sudo snap install photogimp, sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install vlc; sudo snap install opera; sudo snap install discord
 ##Espaço destinado a novos apps coloque os comandos snap de instalação padrão sudo snap install... nas próximas linhas##
 
 
