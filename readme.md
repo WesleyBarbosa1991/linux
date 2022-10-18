@@ -33,7 +33,7 @@ Google Chrome e Opera
 
 __Programas:__
 
-WPS Office Completo em Português, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager
+Visual Studio Code, WPS Office Completo em Português, Whatsdesk, Telegram Desktop, Drivers Nvidia, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord, Virt-Manager
 
 
 __Instalação Básica__
