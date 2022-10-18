@@ -27,18 +27,28 @@ em seguida execute ./nome_do_arquivo.sh
 
 # INSTALAÇÃO UBUNTU
 Para instalação Completa no Ubuntu execute
+
 ./ubuntu_complete.sh
 
 Para instalação Básica no Ubuntu execute
+
 ./ubuntu_basic.sh
 
 # INSTALAÇÃO DEMAIS DERIVADOS DO DEBIAN
 Para instalação Completa no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute
+
 ./mint_zorin_debian_complete.sh
 
 Para instalação BÁSICA  no Linux Mint, Debian, Zorin ou qualquer outro derivado do Debian execute
+
 ./mint_zorin_debian_basic.sh
 
 irá pedir sua senha de sudo su ( é um script que instala diversos apps, portanto precisa de permissão !)
+
+
+
+CASO PRECISE DE UM SCRIPT PERSONALIZADO COM SEUS APPS, ENVIE UMA MENSAGEM NO INSTAGRAM @wesleybr.barbosa
+
+
 
 
