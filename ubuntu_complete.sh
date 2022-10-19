@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ## O COMANDO ACIMA É PARA QUE O SISTEMA OPERACIONAL EXECUTE O SCRIPT INTEIRO##
 # ----------------------------- Script ----------------------------- #
 
@@ -59,27 +58,7 @@ echo "..."
 echo "..."
 echo "..."
 echo "..."
-
 echo "Bora então..."
-
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
-echo "..."
 echo "..."
 echo "..."
 echo "..."
@@ -88,7 +67,6 @@ echo "..."
 echo "..."
 
 ## Removendo travas eventuais do apt ##
-
 echo "Removendo travas eventuais do apt.."
 sudo rm /var/lib/dpkg/lock-frontend; sudo rm /var/cache/apt/archives/lock;
 
@@ -121,6 +99,9 @@ mkdir /home/$USER/Downloads/Programas/outros && cd /home/$USER/Downloads/Program
 echo "Baixando e instalando VirtualBOX"
 wget https://download.virtualbox.org/virtualbox/7.0.0/virtualbox-7.0_7.0.0-153978~Ubuntu~jammy_amd64.deb
 
+echo "baixando e instalando Visual Studio Code"
+wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+
 sudo dpkg -i *.deb 
 
 cd
@@ -150,8 +131,8 @@ sudo apt-get install obs-studio;
 echo "Atualizando Snap"
 sudo snap refresh 
 
-echo "instalando Visual Studio Code, Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install code --classic; sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord;
+echo "Instalando Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
+sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord;
 
 echo "Atualizando Apps Snaps Instalados"
 sudo snap refresh
