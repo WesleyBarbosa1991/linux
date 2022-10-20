@@ -89,9 +89,6 @@ wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo
 echo "Iniciando Download e Instalando Skype"
 wget https://repo.skype.com/latest/skypeforlinux-64.deb && sudo dpkg -i skypeforlinux-64.deb;
 
-echo "Instalando Nvidia"
-wget https://us.download.nvidia.com/XFree86/Linux-x86_64/520.56.06/NVIDIA-Linux-x86_64-520.56.06.run -O NVIDIA-Linux-x86_64-520.56.06.run; sudo chmod +x NVIDIA-Linux-x86_64-520.56.06.run && sudo ./NVIDIA-Linux-x86_64-520.56.06.run
-
 cd 
 
 mkdir /home/$USER/Downloads/Programas/outros && cd /home/$USER/Downloads/Programas/outros
@@ -126,6 +123,9 @@ sudo apt-get update -y
 
 echo "instalando OBS Studio"
 sudo apt-get install obs-studio;
+
+echo "Instalando Gerenciador Torrent(transmission)"
+sudo apt-get install transmission
 
 ## Atualizar snaps ##
 echo "Atualizando Snap"
