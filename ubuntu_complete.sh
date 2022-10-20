@@ -111,9 +111,11 @@ echo "instalando plugins adicionais do Teamviewer e demais Programas !"
 sudo apt-get upgrade -y; sudo apt --fix-broken install
 
 ## Adicionando repositórios Drivers Nvidia e OBS Studio##
-echo "Adicionando repositórios Drivers Nvidia e OBS Studio"
+echo "Adicionando repositórios Drivers Nvidia, Torrent e OBS Studio"
 sudo apt-add-repository ppa:graphics-drivers/ppa 
 sudo add-apt-repository ppa:obsproject/obs-studio
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+
 
 ## ----------------------------- EXECUÇÃO ----------------------------- ##
 
@@ -124,8 +126,9 @@ sudo apt-get update -y
 echo "instalando OBS Studio"
 sudo apt-get install obs-studio;
 
-echo "Instalando Gerenciador Torrent(transmission)"
-sudo apt-get install transmission
+echo "Instalando Gerenciador Torrent(Qbit Ttorrent)"
+sudo apt-get install qbittorrent;
+
 
 ## Atualizar snaps ##
 echo "Atualizando Snap"
