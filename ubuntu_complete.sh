@@ -86,15 +86,9 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &
 echo "iniciando download e instalando Teamviewer"
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo dpkg -i teamviewer_amd64.deb;
 
-echo "Iniciando Download e Instalando Skype"
-wget https://repo.skype.com/latest/skypeforlinux-64.deb && sudo dpkg -i skypeforlinux-64.deb;
-
 cd 
 
 mkdir /home/$USER/Downloads/Programas/outros && cd /home/$USER/Downloads/Programas/outros
-
-echo "Baixando e instalando VirtualBOX"
-wget https://download.virtualbox.org/virtualbox/7.0.0/virtualbox-7.0_7.0.0-153978~Ubuntu~jammy_amd64.deb
 
 echo "baixando e instalando Visual Studio Code"
 wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
@@ -129,13 +123,12 @@ sudo apt-get install obs-studio;
 echo "Instalando Gerenciador Torrent(Qbit Ttorrent)"
 sudo apt-get install qbittorrent;
 
-
 ## Atualizar snaps ##
 echo "Atualizando Snap"
 sudo snap refresh 
 
 echo "Instalando Opera, WPS Office, Whatsdesk, Telegram Desktop, TeamViewer, Obs Studio, Spotify, Ultra VLC, Discord"
-sudo snap install opera; sudo snap install wps-office-all-lang-no-internet; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install spotify; sudo snap install vlc; sudo snap install opera; sudo snap install discord;
+sudo snap install opera; sudo snap install whatsdesk; sudo snap install telegram-desktop; sudo snap install vlc; sudo snap;
 
 echo "Atualizando Apps Snaps Instalados"
 sudo snap refresh
